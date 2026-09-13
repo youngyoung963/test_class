@@ -10,9 +10,9 @@ load_dotenv()
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 
 # 設定不同推播目標
-TARGET_USER_ID = 8719067870               # 個人 (正整數，用戶需先私訊過 Bot)
-TARGET_GROUP_ID = "-5339618596"         # 群組 (負整數，Bot 需在群組內)
-TARGET_CHANNEL = "-4322810613"     # 頻道 Chat ID (Bot 需為管理員)
+TARGET_USER_ID = 774133156               # 個人 (正整數，用戶需先私訊過 Bot)
+TARGET_GROUP_ID = "-5552797411"         # 群組 (負整數，Bot 需在群組內)
+TARGET_CHANNEL = "-1003806675961"     # 頻道 Chat ID (Bot 需為管理員)
 
 async def send_broadcast(chat_id: str | int, message: str):
     bot = Bot(token=TELEGRAM_TOKEN)
